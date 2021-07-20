@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing Music App</title>
+    <link rel="stylesheet" href="music.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>relax</h2>
+        <h1>THE MEDITATION APP <br>Play the Button...<br>close eyes... <br>enjoy music...  <br><img
+                src="images/play.png" id="icon"></h1>
+        <footer class="footer">
+            <div class="outer-footer">
+                <div class="social-links">
+
+                    <ul>
+                        <p>Made by <span>Garima Mehra</span> | </p>
+                        <li class="social-items"><a href="https://www.instagram.com/garima_mehra__"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="social-items1"><a
+                                href="https://www.linkedin.com/in/garima-mehra-9089a71b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BI%2Fqo0TjQRxiIR6RsGxKPIA%3D%3D"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <audio id="mysong">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            if (mysong.paused) {
+                mysong.play();
+                icon.src = "images/pause.png";
+            }
+            else {
+                mysong.pause();
+                icon.src = "images/play.png";
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

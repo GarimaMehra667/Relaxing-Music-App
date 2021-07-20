@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+p{
+    color: white;
+    font-family: Cinzel, serif;
+}
+span{
+    color: rgb(249, 255, 51) ;
+    font-family: Cinzel, serif;
+}
+h2{
+    font-family: Sacramento, cursive;
+    color: rgb(135, 176, 238);
+    margin-left: 0.5%;
+    font-size:30px;
+}
+h1{
+    font-family: Cinzel, serif;
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+    margin-left: 13%;
+    margin-top: 3.5%;
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/Background.jpg);
+    background-size: cover;
+    background-position:unset;
+    position:absolute;
+    margin: 0%;
+   
+}
+
+#icon{
+    width: 125px;
+    cursor: pointer;
+}
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    background-color: rgb(8, 8, 8);
+    margin-bottom: 0%;
+    margin-top: 4%;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links ul{
+    padding: 5px;
+    display: flex;
+    width: 300px;
+    height: 15px;
+    margin: auto;
+}
+
+.social-items{
+    list-style: none;
+    justify-items: center;
+}
+
+.social-items a{
+    padding: 7px 7px;
+    font-size: 19px;
+    color: white;
+    transition: all .25s;
+}
+.social-items a:hover{
+    color: rgb(230, 4, 211);
+}
+
+
+.social-items1{
+    list-style: none;
+    justify-items: center;
+}
+
+.social-items1 a{
+    padding: 7px 7px;
+    font-size: 19px;
+    color: white;
+    transition: all .25s;
+}
+.social-items1 a:hover{
+    
+    color: rgb(34, 111, 199);
+}
+@media (max-width:1024px)and (min-width:767px){
+    h1{
+        font-size: 54px;
+        margin-top: 9%;
+    }
+
+    #icon{
+        width: 110px;
+    }
+    .outer-footer{
+        margin-top: 9%;
+        font-size: 17px;
+    }
+   
+}
+
+@media (max-width:768px)and (min-width:558px){
+    h1{
+        font-size: 40px;
+        margin-top: 8%;
+    }
+
+    #icon{
+        width: 110px;
+    }
+    .outer-footer{
+        margin-top: 4%;
+        font-size: 15px;
+    }
+   
+}
+
+@media (max-width:559px)and (min-width:400px){
+    h1{
+        font-size: 30px;
+        margin-top: 20%;
+    }
+    #icon{
+        width: 90px;
+    }
+    .outer-footer{
+        margin-top: 19%;
+    }
+   
+}
+@media (max-width:400px){
+    h1{
+        font-size: 24px;
+        margin-top: 34%;
+    }
+    #icon{
+        width: 60px;
+    }
+
+    .outer-footer{
+        margin-top: 40%;
+        font-size: 15px;
+    }
+   
+}
